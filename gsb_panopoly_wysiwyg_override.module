@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the GSB Panopoly Wysiwyg Override feature.
+ */
+
+include_once 'gsb_panopoly_wysiwyg_override.features.inc';
