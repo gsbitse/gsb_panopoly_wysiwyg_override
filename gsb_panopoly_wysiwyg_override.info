@@ -2,6 +2,7 @@ name = GSB Panopoly Wysiwyg Override
 core = 7.x
 package = GSB
 dependencies[] = panopoly_wysiwyg
+dependencies[] = features_override
 features[features_api][] = api:1
 features[features_override_items][] = filter.panopoly_wysiwyg_text
 features[features_override_items][] = wysiwyg.panopoly_wysiwyg_text
