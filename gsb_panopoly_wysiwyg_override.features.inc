@@ -19,17 +19,11 @@ function gsb_panopoly_wysiwyg_override_filter_default_formats_alter(&$data) {
     address,abbr,caption,pre,code,script,
     img[!src|title|alt|style|width|height|class|hspace|vspace],
     @[style]'; /* WAS: 'a[!href|target<_blank|title|style],
-
     div[style|class|align<center?justify?left?right],
-
     br,em,i,strong,cite,code,blockquote,ul,ol,li,dl,dt,dd,
-
     span[style],p[style|class],
-
     h1,h2,h3,h4,h5,h6,
-
     img[!src|title|alt|style|width|height|class|hspace|vspace],
-
     @[style]' */
   }
 }
@@ -41,7 +35,30 @@ function gsb_panopoly_wysiwyg_override_wysiwyg_default_profiles_alter(&$data) {
   if (isset($data['panopoly_wysiwyg_text'])) {
     $data['panopoly_wysiwyg_text']['editor'] = 'ckeditor'; /* WAS: 'tinymce' */
     $data['panopoly_wysiwyg_text']['settings']['block_formats'] = 'p,address,pre,h2,h3,h4,h5,h6,div'; /* WAS: 'h1,h2,h3,h4,h5,h6' */
-    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Anchor'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Blockquote'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Bold'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['BulletedList'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Copy'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Cut'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['HorizontalRule'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Image'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Italic'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyCenter'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyLeft'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyRight'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Link'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['NumberedList'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['PasteFromWord'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['PasteText'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Redo'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Scayt'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['SelectAll'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Source'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['SpellChecker'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Superscript'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Table'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Undo'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Unlink'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['paste_auto_cleanup_on_paste'] = 0; /* WAS: 1 */
     $data['panopoly_wysiwyg_text']['settings']['show_toggle'] = 1; /* WAS: 0 */
     unset($data['panopoly_wysiwyg_text']['settings']['buttons']['captionfilter']);
@@ -65,7 +82,6 @@ function gsb_panopoly_wysiwyg_override_wysiwyg_default_profiles_alter(&$data) {
     unset($data['panopoly_wysiwyg_text']['settings']['buttons']['default']['underline']);
     unset($data['panopoly_wysiwyg_text']['settings']['buttons']['default']['undo']);
     unset($data['panopoly_wysiwyg_text']['settings']['buttons']['default']['unlink']);
-    unset($data['panopoly_wysiwyg_text']['settings']['buttons']['drupal']);
     unset($data['panopoly_wysiwyg_text']['settings']['buttons']['fullscreen']);
     unset($data['panopoly_wysiwyg_text']['settings']['buttons']['linkit']);
     unset($data['panopoly_wysiwyg_text']['settings']['buttons']['paste']);
