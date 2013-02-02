@@ -43,8 +43,8 @@ function gsb_panopoly_wysiwyg_override_wysiwyg_default_profiles_alter(&$data) {
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['HorizontalRule'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Image'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Italic'] = 1; /* WAS: '' */
-    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyCenter'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyLeft'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyCenter'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyRight'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Link'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['NumberedList'] = 1; /* WAS: '' */
