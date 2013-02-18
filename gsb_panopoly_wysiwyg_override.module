@@ -5,3 +5,63 @@
  */
 
 include_once 'gsb_panopoly_wysiwyg_override.features.inc';
+
+/**
+ * Implementation of hook_wysiwyg_editor_settings_alter()
+ */
+function gsb_panopoly_wysiwyg_override_wysiwyg_editor_settings_alter(&$settings, $context) {
+
+   if (isset($settings['toolbar'][0])) {
+    unset($settings['toolbar'][0]);
+    $settings['toolbar'][0] = array(
+      "Bold",
+      "Italic",
+      "-",
+      "JustifyLeft",
+      "JustifyCenter",
+      "JustifyRight",
+      "-",
+      "BulletedList",
+      "NumberedList",
+      "-",
+      "Undo",
+      "Redo",
+      "-",
+      "Link",
+      "Unlink",
+      "-",
+      "Image",
+      "Superscript",
+      "Blockquote",
+      "Source",
+      "HorizontalRule",
+      "-",
+      "Cut",
+      "Copy",
+      "PasteText",
+      "PasteFromWord",
+      "-",
+      "Table",
+      "SelectAll",
+      "SpellChecker",
+      "Scayt",
+      "media",
+      "Teaser"
+    );
+
+  }
+
+}
+
+/**
+ * Implementation of hook_module_implements_alter()
+ */
+function gsb_panopoly_wysiwyg_override_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'wysiwyg_editor_settings_alter') {
+    if (isset($implementations['gsb_panopoly_wysiwyg_override'])) {
+      $group = $implementations['gsb_panopoly_wysiwyg_override'];
+      unset($implementations['gsb_panopoly_wysiwyg_override']);
+      $implementations['gsb_panopoly_wysiwyg_override'] = $group;
+    }
+  }
+}
