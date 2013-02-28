@@ -65,3 +65,10 @@ features[features_overrides][] = wysiwyg.panopoly_wysiwyg_text.settings|buttons|
 features[features_overrides][] = wysiwyg.panopoly_wysiwyg_text.settings|buttons|spellchecker
 features[features_overrides][] = wysiwyg.panopoly_wysiwyg_text.settings|paste_auto_cleanup_on_paste
 features[features_overrides][] = wysiwyg.panopoly_wysiwyg_text.settings|show_toggle
+
+
+; Information added by drush on 2013-02-28
+version = "1.1"
+project = "gsb_panopoly_wysiwyg_override"
+datestamp = "1362009414"
+

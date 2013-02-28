@@ -25,6 +25,8 @@ function gsb_panopoly_wysiwyg_override_filter_default_formats_alter(&$data) {
     h1,h2,h3,h4,h5,h6,
     img[!src|title|alt|style|width|height|class|hspace|vspace],
     @[style]' */
+    $data['panopoly_wysiwyg_text']['filters']['wysiwyg']['settings']['rule_valid_classes'] = 
+    "caption,caption-inner,caption-left,caption-center,caption-right,caption-text,wysiwyg-break,panopoly-image-full,panopoly-image-half,panopoly-image-quarter,panopoly-image-thumbnail,acc-title,acc-body";
   }
 }
 

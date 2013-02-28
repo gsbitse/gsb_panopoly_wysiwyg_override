@@ -16,7 +16,7 @@ function gsb_panopoly_wysiwyg_override_wysiwyg_editor_settings_alter(&$settings,
     $settings['toolbar'][0] = array(
       "Bold",
       "Italic",
-      "-",
+      "Styles",
       "JustifyLeft",
       "JustifyCenter",
       "JustifyRight",
