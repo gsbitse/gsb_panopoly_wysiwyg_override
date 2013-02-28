@@ -26,7 +26,21 @@ function gsb_panopoly_wysiwyg_override_filter_default_formats_alter(&$data) {
     img[!src|title|alt|style|width|height|class|hspace|vspace],
     @[style]' */
     $data['panopoly_wysiwyg_text']['filters']['wysiwyg']['settings']['rule_valid_classes'] = 
-    "caption,caption-inner,caption-left,caption-center,caption-right,caption-text,wysiwyg-break,panopoly-image-full,panopoly-image-half,panopoly-image-quarter,panopoly-image-thumbnail,acc-title,acc-body";
+    array(
+        0 => 'caption',
+        2 => 'caption-inner',
+        4 => 'caption-left',
+        6 => 'caption-center',
+        8 => 'caption-right',
+        10 => 'caption-text',
+        12 => 'wysiwyg-break',
+        14 => 'panopoly-image-full',
+        16 => 'panopoly-image-half',
+        18 => 'panopoly-image-quarter',
+        20 => 'panopoly-image-thumbnail',
+        22 => 'acc-title',
+        24 => 'acc-body',
+      );
   }
 }
 
