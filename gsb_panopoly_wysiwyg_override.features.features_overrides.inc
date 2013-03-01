@@ -12,6 +12,8 @@ function gsb_panopoly_wysiwyg_override_features_override_default_overrides() {
   $overrides = array();
 
   // Exported overrides for: filter
+  $overrides["filter.panopoly_wysiwyg_text.filters|wysiwyg|settings|rule_valid_classes|22"] = 'acc-title';
+  $overrides["filter.panopoly_wysiwyg_text.filters|wysiwyg|settings|rule_valid_classes|24"] = 'acc-body';
   $overrides["filter.panopoly_wysiwyg_text.filters|wysiwyg|settings|valid_elements"] = 'a[!href|target<_blank|title|style],
   div[style|class|align<center?justify?left?right],
   p,br,em,i,strong,u,cite,blockquote,hr,ul,ol,li,dl,dt,dd,
@@ -47,6 +49,7 @@ function gsb_panopoly_wysiwyg_override_features_override_default_overrides() {
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|default|SelectAll"] = 1;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|default|Source"] = 1;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|default|SpellChecker"] = 1;
+  $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|default|Styles"] = 1;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|default|Superscript"] = 1;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|default|Table"] = 1;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|default|Undo"] = 1;
@@ -71,13 +74,23 @@ function gsb_panopoly_wysiwyg_override_features_override_default_overrides() {
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|default|underline"]["DELETED"] = TRUE;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|default|undo"]["DELETED"] = TRUE;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|default|unlink"]["DELETED"] = TRUE;
+  $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|drupal|accordion"] = 1;
+  $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|drupal|accordion_header"] = 1;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|fullscreen"]["DELETED"] = TRUE;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|linkit"]["DELETED"] = TRUE;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|paste"]["DELETED"] = TRUE;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|pdw"]["DELETED"] = TRUE;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|spellchecker"]["DELETED"] = TRUE;
+  $overrides["wysiwyg.panopoly_wysiwyg_text.settings|css_classes"] = 'Heading H2=h2
+  Heading H3=h3
+  Heading H4=h4
+  Heading H5=h5
+  Heading H6=h6
+  Acc-Title=p.acc-title
+  Acc-Body=p.acc-body';
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|paste_auto_cleanup_on_paste"] = 0;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|show_toggle"] = 1;
+  $overrides["wysiwyg.panopoly_wysiwyg_text.settings|theme"] = 'kama';
 
  return $overrides;
 }

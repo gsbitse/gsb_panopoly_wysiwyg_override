@@ -9,6 +9,8 @@
  */
 function gsb_panopoly_wysiwyg_override_filter_default_formats_alter(&$data) {
   if (isset($data['panopoly_wysiwyg_text'])) {
+    $data['panopoly_wysiwyg_text']['filters']['wysiwyg']['settings']['rule_valid_classes']['22'] = 'acc-title'; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['filters']['wysiwyg']['settings']['rule_valid_classes']['24'] = 'acc-body'; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['filters']['wysiwyg']['settings']['valid_elements'] = 'a[!href|target<_blank|title|style],
     div[style|class|align<center?justify?left?right],
     p,br,em,i,strong,u,cite,blockquote,hr,ul,ol,li,dl,dt,dd,
@@ -25,22 +27,6 @@ function gsb_panopoly_wysiwyg_override_filter_default_formats_alter(&$data) {
     h1,h2,h3,h4,h5,h6,
     img[!src|title|alt|style|width|height|class|hspace|vspace],
     @[style]' */
-    $data['panopoly_wysiwyg_text']['filters']['wysiwyg']['settings']['rule_valid_classes'] = 
-    array(
-        0 => 'caption',
-        2 => 'caption-inner',
-        4 => 'caption-left',
-        6 => 'caption-center',
-        8 => 'caption-right',
-        10 => 'caption-text',
-        12 => 'wysiwyg-break',
-        14 => 'panopoly-image-full',
-        16 => 'panopoly-image-half',
-        18 => 'panopoly-image-quarter',
-        20 => 'panopoly-image-thumbnail',
-        22 => 'acc-title',
-        24 => 'acc-body',
-      );
   }
 }
 
@@ -59,8 +45,8 @@ function gsb_panopoly_wysiwyg_override_wysiwyg_default_profiles_alter(&$data) {
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['HorizontalRule'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Image'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Italic'] = 1; /* WAS: '' */
-    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyLeft'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyCenter'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyLeft'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['JustifyRight'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Link'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['NumberedList'] = 1; /* WAS: '' */
@@ -71,12 +57,23 @@ function gsb_panopoly_wysiwyg_override_wysiwyg_default_profiles_alter(&$data) {
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['SelectAll'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Source'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['SpellChecker'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Styles'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Superscript'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Table'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Undo'] = 1; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['buttons']['default']['Unlink'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['drupal']['accordion'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['buttons']['drupal']['accordion_header'] = 1; /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['css_classes'] = 'Heading H2=h2
+    Heading H3=h3
+    Heading H4=h4
+    Heading H5=h5
+    Heading H6=h6
+    Acc-Title=p.acc-title
+    Acc-Body=p.acc-body'; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['paste_auto_cleanup_on_paste'] = 0; /* WAS: 1 */
     $data['panopoly_wysiwyg_text']['settings']['show_toggle'] = 1; /* WAS: 0 */
+    $data['panopoly_wysiwyg_text']['settings']['theme'] = 'kama'; /* WAS: 'advanced' */
     unset($data['panopoly_wysiwyg_text']['settings']['buttons']['captionfilter']);
     unset($data['panopoly_wysiwyg_text']['settings']['buttons']['default']['blockquote']);
     unset($data['panopoly_wysiwyg_text']['settings']['buttons']['default']['bold']);
