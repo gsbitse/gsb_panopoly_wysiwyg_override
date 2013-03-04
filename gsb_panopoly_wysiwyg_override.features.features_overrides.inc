@@ -82,12 +82,12 @@ function gsb_panopoly_wysiwyg_override_features_override_default_overrides() {
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|pdw"]["DELETED"] = TRUE;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|buttons|spellchecker"]["DELETED"] = TRUE;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|css_classes"] = 'Heading H2=h2
-Heading H3=h3
-Heading H4=h4
-Heading H5=h5
-Heading H6=h6
-Accordion Header=p.acc-title
-Accordion Body=p.acc-body';
+  Heading H3=h3
+  Heading H4=h4
+  Heading H5=h5
+  Heading H6=h6
+  Acc-Title=p.acc-title
+  Acc-Body=p.acc-body';
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|paste_auto_cleanup_on_paste"] = 0;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|show_toggle"] = 1;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|theme"] = 'kama';
