@@ -69,8 +69,8 @@ function gsb_panopoly_wysiwyg_override_wysiwyg_default_profiles_alter(&$data) {
     Heading H4=h4
     Heading H5=h5
     Heading H6=h6
-    Acc-Title=p.acc-title
-    Acc-Body=p.acc-body'; /* WAS: '' */
+    Accordion Title=p.acc-title
+    Accordion Body=p.acc-body'; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['paste_auto_cleanup_on_paste'] = 0; /* WAS: 1 */
     $data['panopoly_wysiwyg_text']['settings']['show_toggle'] = 1; /* WAS: 0 */
     $data['panopoly_wysiwyg_text']['settings']['theme'] = 'kama'; /* WAS: 'advanced' */
