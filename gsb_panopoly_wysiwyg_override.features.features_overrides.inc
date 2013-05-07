@@ -87,7 +87,10 @@ function gsb_panopoly_wysiwyg_override_features_override_default_overrides() {
   Heading H5=h5
   Heading H6=h6
   Accordion Header=p.acc-title
-  Accordion Body=p.acc-body';
+  Accordion Body=p.acc-body
+  Caption Left=div.caption-left
+  Caption Right=div.caption-right
+  Caption Center=div.caption-center';
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|paste_auto_cleanup_on_paste"] = 0;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|show_toggle"] = 1;
   $overrides["wysiwyg.panopoly_wysiwyg_text.settings|theme"] = 'kama';
