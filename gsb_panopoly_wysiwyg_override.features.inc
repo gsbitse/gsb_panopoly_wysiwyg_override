@@ -71,6 +71,9 @@ function gsb_panopoly_wysiwyg_override_wysiwyg_default_profiles_alter(&$data) {
     Heading H6=h6
     Accordion Title=p.acc-title
     Accordion Body=p.acc-body
+    Quote=div.callout
+    Quote author=p.callout-author
+    Intro Copy=p.intro-copy
     Caption Left=div.caption-left
     Caption Right=div.caption-right
     Caption Center=div.caption-center'; /* WAS: '' */

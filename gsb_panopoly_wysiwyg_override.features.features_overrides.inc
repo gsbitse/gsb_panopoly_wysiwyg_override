@@ -88,6 +88,9 @@ function gsb_panopoly_wysiwyg_override_features_override_default_overrides() {
   Heading H6=h6
   Accordion Header=p.acc-title
   Accordion Body=p.acc-body
+  Quote=div.callout
+  Quote author=p.callout-author
+  Intro Copy=p.intro-copy
   Caption Left=div.caption-left
   Caption Right=div.caption-right
   Caption Center=div.caption-center';
