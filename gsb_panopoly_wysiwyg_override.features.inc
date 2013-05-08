@@ -75,8 +75,7 @@ function gsb_panopoly_wysiwyg_override_wysiwyg_default_profiles_alter(&$data) {
     Quote author=p.callout-author
     Intro Copy=p.intro-copy
     Caption Left=div.caption-left
-    Caption Right=div.caption-right
-    Caption Center=div.caption-center'; /* WAS: '' */
+    Caption Right=div.caption-right'; /* WAS: '' */
     $data['panopoly_wysiwyg_text']['settings']['paste_auto_cleanup_on_paste'] = 0; /* WAS: 1 */
     $data['panopoly_wysiwyg_text']['settings']['show_toggle'] = 1; /* WAS: 0 */
     $data['panopoly_wysiwyg_text']['settings']['theme'] = 'kama'; /* WAS: 'advanced' */

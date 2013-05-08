@@ -5,8 +5,10 @@
    */
   Drupal.behaviors.caption_wrapper_width = {
     attach: function (context, settings) {
-      $('div.caption-center img, div.caption-left img, div.caption-right img').each(function() {
-        $(this).parent().css('width',$(this).attr('width'));
+      $('div.caption-left img, div.caption-right img').each(function() {
+        $(this).parent().width($(this).width());
+        var title = $(this).attr('title');
+        $(this).after('<div class="caption-text">' + title + '</div>');
       });
     }
   }

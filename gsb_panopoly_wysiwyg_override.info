@@ -73,3 +73,10 @@ features[features_overrides][] = wysiwyg.panopoly_wysiwyg_text.settings|css_clas
 features[features_overrides][] = wysiwyg.panopoly_wysiwyg_text.settings|paste_auto_cleanup_on_paste
 features[features_overrides][] = wysiwyg.panopoly_wysiwyg_text.settings|show_toggle
 features[features_overrides][] = wysiwyg.panopoly_wysiwyg_text.settings|theme
+
+
+; Information added by drush on 2013-05-08
+version = "master-dev"
+project = "gsb_panopoly_wysiwyg_override"
+datestamp = "1368044815"
+
