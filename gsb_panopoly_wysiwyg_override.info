@@ -4,6 +4,7 @@ package = GSB
 php = 5.2.4
 version = master-dev
 project = gsb_panopoly_wysiwyg_override
+scripts[] = js/caption.js
 dependencies[] = features_override
 dependencies[] = panopoly_wysiwyg
 datestamp = 1362111519
